@@ -1,7 +1,7 @@
-using MbDevelopment.Eden.Core;
+using MbDevelopment.Eden.Core.Botanical;
 using Microsoft.EntityFrameworkCore;
 
-namespace MbDevelopment.Eden.DataAccess;
+namespace MbDevelopment.Eden.DataAccess.Botanical;
 
 public class BotanicalContext(DbContextOptions<BotanicalContext> options) : DbContext(options)
 {

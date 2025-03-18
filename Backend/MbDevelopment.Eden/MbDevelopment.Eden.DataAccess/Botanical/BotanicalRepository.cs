@@ -1,9 +1,9 @@
 using System.Linq.Expressions;
-using MbDevelopment.Eden.Core;
+using MbDevelopment.Eden.Core.Botanical;
 using MbDevelopment.Eden.DataAccess.Base;
 using Microsoft.EntityFrameworkCore;
 
-namespace MbDevelopment.Eden.DataAccess;
+namespace MbDevelopment.Eden.DataAccess.Botanical;
 
 public class BotanicalRepository<T> : IRepository<T> where T : class, IObjectIdentity
 {

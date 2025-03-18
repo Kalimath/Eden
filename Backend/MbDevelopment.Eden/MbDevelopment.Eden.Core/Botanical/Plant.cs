@@ -1,8 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using MbDevelopment.Eden.Core.Botanical;
 
-namespace MbDevelopment.Eden.Core;
+namespace MbDevelopment.Eden.Core.Botanical;
 
 public class Plant : IObjectIdentity
 {
