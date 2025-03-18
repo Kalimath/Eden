@@ -1,0 +1,6 @@
+@MbDevelopment.Eden.BotanicalAPI_HostAddress = http://localhost:5136
+
+GET {{MbDevelopment.Eden.BotanicalAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
