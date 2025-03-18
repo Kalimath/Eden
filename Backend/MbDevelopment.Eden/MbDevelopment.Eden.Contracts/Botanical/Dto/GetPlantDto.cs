@@ -7,5 +7,5 @@ public record GetPlantDto
     // characteristics
     // NutrientBalance (NPK, water, soil)
     // Habitat
-    // Distribution
+    // ...
 }
