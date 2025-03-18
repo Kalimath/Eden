@@ -7,7 +7,11 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\MbDevelopment.Eden.Contracts\MbDevelopment.Eden.Contracts.csproj" />
+      <PackageReference Include="MediatR.Contracts" Version="2.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Shared\CQRS\" />
     </ItemGroup>
 
 </Project>

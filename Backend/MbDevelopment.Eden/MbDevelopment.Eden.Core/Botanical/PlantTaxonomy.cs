@@ -1,6 +1,6 @@
 namespace MbDevelopment.Eden.Core.Botanical;
 
-public class TaxonomyData
+public class PlantTaxonomy
 {
     public string Genus { get; set; }
     public string Species { get; set; }

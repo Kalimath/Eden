@@ -1,9 +1,8 @@
-namespace MbDevelopment.Eden.Core.Botanical;
+namespace MbDevelopment.Eden.Contracts.Botanical.Dto;
 
-public class Plant : IObjectIdentity
+public record CreatePlantDto
 {
-    public Guid Id { get; set; }
-    public PlantTaxonomy PlantTaxonomy { get; set; }
+    public PlantTaxonomyDto PlantTaxonomy { get; init; }
     // characteristics
     // NutrientBalance (NPK, water, soil)
     // Habitat

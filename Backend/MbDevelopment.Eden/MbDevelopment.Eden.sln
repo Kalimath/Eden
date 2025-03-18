@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MbDevelopment.Eden.Botanica
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MbDevelopment.Eden.DataAccess", "MbDevelopment.Eden.DataAccess\MbDevelopment.Eden.DataAccess.csproj", "{C98D5A1E-924E-44A3-A633-7D5BA4578CA0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MbDevelopment.Eden.Contracts", "MbDevelopment.Eden.Contracts\MbDevelopment.Eden.Contracts.csproj", "{B17C42E7-EC88-450C-850B-29DE633003C2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{C98D5A1E-924E-44A3-A633-7D5BA4578CA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C98D5A1E-924E-44A3-A633-7D5BA4578CA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C98D5A1E-924E-44A3-A633-7D5BA4578CA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B17C42E7-EC88-450C-850B-29DE633003C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B17C42E7-EC88-450C-850B-29DE633003C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B17C42E7-EC88-450C-850B-29DE633003C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B17C42E7-EC88-450C-850B-29DE633003C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
