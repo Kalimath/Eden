@@ -23,7 +23,7 @@ public class CreatePlantCommandHandler : IRequestHandler<CreatePlantCommand, Pla
         var plantExistsWithName = await _plantRepo.Exists(x => x.PlantTaxonomy.ScientificName == requestScientificName, cancellationToken);
         if (plantExistsWithName)
         {
-            throw new InvalidOperationException("Species with the same scientific name already exists.");
+            throw new InvalidOperationException("Plant with the same scientific name already exists.");
         }
 
         var newPlant = new Plant
