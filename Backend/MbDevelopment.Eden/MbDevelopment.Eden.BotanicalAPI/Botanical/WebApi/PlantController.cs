@@ -13,7 +13,7 @@ namespace MbDevelopment.Eden.BotanicalAPI.Botanical.WebApi;
 public class PlantController(IMediator mediator, ILogger<ApiControllerBase> logger) : ApiControllerBase(mediator, logger)
 {
     [HttpGet("{id:guid}")]
-    [ProducesResponseType(typeof(GetPlantDto), StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(PlantDto), StatusCodes.Status200OK)]
     public Task<IActionResult> GetPlantById([FromRoute] Guid id)
     {
         return ExecuteAsync(new GetPlantByIdQuery(id));
@@ -22,7 +22,7 @@ public class PlantController(IMediator mediator, ILogger<ApiControllerBase> logg
     
     [HttpPost]
     [AutoValidateAntiforgeryToken]
-    [ProducesResponseType(typeof(GetPlantDto), StatusCodes.Status201Created)]
+    [ProducesResponseType(typeof(PlantDto), StatusCodes.Status201Created)]
     public Task<IActionResult> CreatePlant([FromBody] CreatePlantCommand request)
     {
        return ExecutePost(request); 

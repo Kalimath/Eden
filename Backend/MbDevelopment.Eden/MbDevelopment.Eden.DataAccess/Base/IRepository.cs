@@ -4,7 +4,7 @@ namespace MbDevelopment.Eden.DataAccess.Base;
 
 public interface IRepository<T> where T : class
 {
-    bool Exists(Expression<Func<T, bool>> predicate);
+    Task<bool> Exists(Expression<Func<T, bool>> predicate, CancellationToken cancellationToken);
     #region Get items
     Task<T?> GetAsync(Expression<Func<T, bool>> predicate, CancellationToken cancellationToken = default);
     Task<IEnumerable<T>> GetListAsync(Expression<Func<T, bool>> predicate);

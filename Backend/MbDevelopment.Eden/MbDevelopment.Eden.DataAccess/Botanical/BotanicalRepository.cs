@@ -70,8 +70,8 @@ public class BotanicalRepository<T> : IRepository<T> where T : class, IObjectIde
         _dbContext.Entry(entity).State = EntityState.Modified;
     }
 
-    public bool Exists(Expression<Func<T, bool>> predicate)
+    public Task<bool> Exists(Expression<Func<T, bool>> predicate, CancellationToken cancellationToken)
     {
-        return _modelDbSets.Any(predicate);
+        return Task.FromResult(_modelDbSets.Any(predicate));
     }
 }

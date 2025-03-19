@@ -9,5 +9,7 @@ public class PlantTaxonomy
     public string Description { get; set; } = string.Empty;
     public Guid PlantId { get; set; }
     
-    public string ScientificName => $"{Genus} {Species}" + (string.IsNullOrEmpty(Cultivar) ? "" : $" '{Cultivar}'");
+    public string ScientificName => ToScientificName(Genus, Species, Cultivar);
+
+    
 }

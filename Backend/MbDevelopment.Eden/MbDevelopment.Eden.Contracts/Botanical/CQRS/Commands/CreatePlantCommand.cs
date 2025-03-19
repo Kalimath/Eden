@@ -3,7 +3,7 @@ using MbDevelopment.Eden.Contracts.Shared.CQRS.Base;
 
 namespace MbDevelopment.Eden.Contracts.Botanical.CQRS.Commands;
 
-public class CreatePlantCommand : CommandBase<CreatePlantDto>
+public class CreatePlantCommand : CommandBase<PlantDto>
 {
     public required string Genus { get; init; }
     public required string Species { get; init; }

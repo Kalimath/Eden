@@ -1,6 +1,6 @@
 namespace MbDevelopment.Eden.Contracts.Botanical.Dto;
 
-public record GetPlantDto
+public record PlantDto
 {
     public Guid Id { get; init; }
     public PlantTaxonomyDto Taxonomy { get; init; }
